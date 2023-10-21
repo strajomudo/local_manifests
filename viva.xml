@@ -1,0 +1,23 @@
+<manifest>
+    <!-- Remotes -->
+    <remote name="strajomudo" fetch="https://github.com/xiaomi-mtstrajomudos" revision="thirteen" />
+
+    <!-- Device / Kernel prebuilts -->
+    <project path="device/xiaomi/viva" name="android_device_xiaomi_viva" remote="strajomudo" />
+    <project path="device/xiaomi/viva-kernel" name="android_device_xiaomi_viva-kernel" remote="strajomudo" />
+
+	<!-- Proprietary vendor -->
+    <project path="vendor/xiaomi/viva" name="android_vendor_xiaomi_viva" remote="strajomudo" />
+
+	<!-- sepolicy -->
+    <remove-project name="android_device_mediatek_sepolicy_vndr" />
+    <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="strajomudo" />
+
+    <!-- Hardware -->
+    <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="strajomudo" />
+    <project path="hardware/mediatek" name="android_hardware_mediatek" remote="strajomudo" />
+    <project path="hardware/mediatek/wlan" name="android_hardware_mediatek_wlan" remote="strajomudo" />
+
+    
+
+</manifest>
